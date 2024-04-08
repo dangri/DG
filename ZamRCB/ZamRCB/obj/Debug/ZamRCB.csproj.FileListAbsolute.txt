@@ -1,0 +1,15 @@
+E:\depotsim\trunk\Sys\ZamRCB\ZamRCB\obj\Debug\ZamRCB.csproj.AssemblyReference.cache
+E:\depotsim\trunk\Sys\ZamRCB\ZamRCB\obj\Debug\ZamRCB.csproj.SuggestedBindingRedirects.cache
+E:\depotsim\trunk\Sys\ZamRCB\ZamRCB\obj\Debug\ZamRCB.Form1.resources
+E:\depotsim\trunk\Sys\ZamRCB\ZamRCB\obj\Debug\ZamRCB.Form2.resources
+E:\depotsim\trunk\Sys\ZamRCB\ZamRCB\obj\Debug\ZamRCB.Properties.Resources.resources
+E:\depotsim\trunk\Sys\ZamRCB\ZamRCB\obj\Debug\ZamRCB.csproj.GenerateResource.cache
+E:\depotsim\trunk\Sys\ZamRCB\ZamRCB\obj\Debug\ZamRCB.csproj.CoreCompileInputs.cache
+E:\depotsim\trunk\Sys\ZamRCB\ZamRCB\bin\Debug\ZamRCB.exe.config
+E:\depotsim\trunk\Sys\ZamRCB\ZamRCB\bin\Debug\ZamRCB.exe
+E:\depotsim\trunk\Sys\ZamRCB\ZamRCB\bin\Debug\ZamRCB.pdb
+E:\depotsim\trunk\Sys\ZamRCB\ZamRCB\bin\Debug\iec61850dotnet.dll
+E:\depotsim\trunk\Sys\ZamRCB\ZamRCB\bin\Debug\iec61850dotnet.pdb
+E:\depotsim\trunk\Sys\ZamRCB\ZamRCB\obj\Debug\ZamRCB.csproj.CopyComplete
+E:\depotsim\trunk\Sys\ZamRCB\ZamRCB\obj\Debug\ZamRCB.exe
+E:\depotsim\trunk\Sys\ZamRCB\ZamRCB\obj\Debug\ZamRCB.pdb

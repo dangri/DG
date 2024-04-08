@@ -1,0 +1,6 @@
+E:\depotsim\trunk\Sys\ZamRCB\IEC61850forCSharp\bin\Debug\iec61850dotnet.dll
+E:\depotsim\trunk\Sys\ZamRCB\IEC61850forCSharp\bin\Debug\iec61850dotnet.pdb
+E:\depotsim\trunk\Sys\ZamRCB\IEC61850forCSharp\obj\Debug\IEC61850.NET.csproj.AssemblyReference.cache
+E:\depotsim\trunk\Sys\ZamRCB\IEC61850forCSharp\obj\Debug\IEC61850.NET.csproj.CoreCompileInputs.cache
+E:\depotsim\trunk\Sys\ZamRCB\IEC61850forCSharp\obj\Debug\iec61850dotnet.dll
+E:\depotsim\trunk\Sys\ZamRCB\IEC61850forCSharp\obj\Debug\iec61850dotnet.pdb
