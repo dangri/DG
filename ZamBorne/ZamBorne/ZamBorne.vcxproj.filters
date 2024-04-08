@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{5033f1f8-078c-4e93-95d5-1f47f5389e43}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{bace0563-faed-459d-a43c-4f5627674f79}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{67375dc7-4830-416f-a114-1cf1f02e86fe}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{9fe73a89-02b2-4401-bdea-e9a04e4441bb}</UniqueIdentifier>
+      <Extensions>vgdbsettings</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ZamBorne.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamDEAO.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamDECP.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamDEDO.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamDESE.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamDPMC.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamDSTO.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamEquip.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamEVSE.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamFSCC.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamFSCH.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamLLN0.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamLPHD.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamMMXU.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamProcess.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamServeur.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamSignal.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamUnit.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamXSWI.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamReport.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamCtemps.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamDEEVP.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamLDEV.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamDPCP.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamReportena.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamDCTE.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamDWMX.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ZamBorne-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="ZamBorne-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="IEDSE.icd" />
+    <None Include="DER.scd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ZamDEAO.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDECP.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDEDO.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDESE.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDPMC.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDSTO.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamEquip.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamEVSE.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamFSCC.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamFSCH.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamLLN0.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamLPHD.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamMMXU.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamProcess.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamSignal.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamUnit.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamXSWI.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamReport.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamCtemps.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamCmd.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamServeur.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDEEVP.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamLDEV.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDCTE.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDHFT.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDHFW.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDHVT.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDLFT.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDLVT.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDVAR.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDVVR.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDVWC.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDPCP.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamReportena.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDWMX.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
