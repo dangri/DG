@@ -1,0 +1,1691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCL xmlns="http://www.iec.ch/61850/2003/SCL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iec.ch/61850/2003/SCL SCL.xsd" version="2007" revision="B">
+   <Header id="straton 2" nameStructure="IEDName"/>
+   <Communication>
+      <SubNetwork name="SubNet1" type="8-MMS">
+         <Text/>
+         <ConnectedAP iedName="IEDEV" apName="AccPoint">
+            <Address>
+               <P type="IP">0.0.0.0</P>
+               <P type="IP-SUBNET">255.255.255.0</P>
+               <P type="IP-GATEWAY">0.0.0.0</P>
+               <P type="OSI-TSEL">0001</P>
+               <P type="OSI-SSEL">0001</P>
+               <P type="OSI-PSEL">00000001</P>
+               <P type="APPID">1000</P>
+               <P type="VLAN-ID">500</P>
+            </Address>
+         </ConnectedAP>
+      </SubNetwork>
+   </Communication>
+   <IED name="IEDEV" manufacturer="ZAMIREN" configVersion="1.0.0" originalSclVersion="2007" originalSclRevision="B">
+      <Services nameLength="64">
+         <DynAssociation max="6"/>
+         <GetDirectory/>
+         <GetDataObjectDefinition/>
+         <DataObjectDirectory/>
+         <GetDataSetValue/>
+         <DataSetDirectory/>
+         <ConfDataSet modify="true" maxAttributes="100" max="10"/>
+         <DynDataSet maxAttributes="100" max="10"/>
+         <ReadWrite/>
+         <ConfReportControl bufConf="true" bufMode="buffered" max="10"/>
+         <GetCBValues/>
+         <ReportSettings rptID="Dyn" optFields="Dyn" bufTime="Dyn" trgOps="Dyn" intgPd="Dyn" cbName="Conf" datSet="Dyn"/>
+         <GSESettings appID="Conf" cbName="Conf" datSet="Conf"/>
+         <GOOSE max="10"/>
+         <FileHandling/>
+         <ClientServices goose="true" maxGOOSE="128" supportsLdName="true" maxAttributes="1000" gsse="false" bufReport="false" unbufReport="false" readLog="false" sv="false" maxReports="0" maxSMV="0"/>
+         <SupSubscription maxGo="0" maxSv="0"/>
+      </Services>
+      <AccessPoint name="AccPoint">
+         <Server>
+            <Authentication/>
+            <LDevice inst="LDEV1" ldName="LDEV1">
+               <LN0 lnClass="LLN0" lnType="LLN0Z" inst="">
+                  <DataSet name="DSEV" desc="Contenu du DEEV">
+                     <FCDA ldInst="LDEV1" lnClass="DEEV" lnInst="1" doName="ConnTypSel" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="DEEV" lnInst="1" doName="EVSt" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="DEEV" lnInst="1" doName="Soc" daName="mag.f" fc="MX"/>
+                     <FCDA ldInst="LDEV1" lnClass="DEEV" lnInst="1" doName="WCurrent" daName="mag.f" fc="MX"/>
+                     <FCDA ldInst="LDEV1" lnClass="DEEV" lnInst="1" doName="EVId" daName="setVal" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="DEEV" lnInst="1" doName="EMAId" daName="setVal" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="DEEV" lnInst="1" doName="DptTm" daName="setTm" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="DEEV" lnInst="1" doName="WhTgt" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="DEEV" lnInst="1" doName="WChaTgt" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="DEEV" lnInst="1" doName="EVSERef" daName="intAddr" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="DEEV" lnInst="1" doName="StartTm" daName="setTm" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="DSTO" lnInst="1" doName="SocWh" daName="mag.f" fc="MX"/>
+                     <FCDA ldInst="LDEV1" lnClass="DSTO" lnInst="1" doName="WSpt" daName="mxVal.f" fc="MX"/>
+                  </DataSet>
+                  <DataSet name="DSEVC" desc="EV Control">
+                     <FCDA ldInst="LDEV1" lnClass="FSCC" lnInst="1" doName="ActSchdRef" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCC" lnInst="1" doName="CtlEnt" daName="setSrcRef" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCC" lnInst="1" doName="Schd1" daName="setSrcRef" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCC" lnInst="1" doName="Schd2" daName="setSrcRef" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCC" lnInst="1" doName="Schd3" daName="setSrcRef" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCC" lnInst="1" doName="ValMV" daName="mag.f" fc="MX"/>
+                  </DataSet>
+                  <DataSet name="DSEVS1" desc="EV Sched 1">
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="NamPlt" daName="vendor" fc="DC"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="NamPlt" daName="swRev" fc="DC"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="Beh" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="SchdSt" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="SchdEntr" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="EnaReq" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="DsaReq" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValMV" daName="mag.f" fc="MX"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="SchdPrio" daName="setVal" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="NumEntr" daName="setVal" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="SchdIntv" daName="setVal" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="EvtTrg" daName="setVal" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="SchdReuse" daName="setVal" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="StrTm0" daName="setTm" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="StrTm1" daName="setTm" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="StrTm1" daName="setCal.occ" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="StrTm1" daName="setCal.occType" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="StrTm1" daName="setCal.occPer" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="StrTm1" daName="setCal.weekDay" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="StrTm1" daName="setCal.month" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="StrTm1" daName="setCal.day" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="StrTm1" daName="setCal.hr" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="StrTm1" daName="setCal.mn" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG01" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG02" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG03" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG04" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG05" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG06" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG07" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG08" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG09" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG10" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG11" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG12" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG13" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG14" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG15" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG16" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG17" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG18" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG19" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG20" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG21" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG22" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG23" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG24" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG25" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG26" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG27" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG28" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG29" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG30" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG31" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG32" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG33" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG34" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG35" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG36" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG37" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG38" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG39" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG40" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG41" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG42" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG43" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG44" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG45" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG46" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG47" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG48" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG49" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG50" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG51" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG52" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG53" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG54" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG55" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG56" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG57" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG58" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG59" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG60" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG61" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG62" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG63" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG64" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG65" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG66" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG67" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG68" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG69" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG70" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG71" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG72" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG73" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG74" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG75" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG76" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG77" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG78" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG79" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG80" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG81" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG82" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG83" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG84" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG85" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG86" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG87" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG88" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG89" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG90" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG91" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG92" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG93" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG94" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG95" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="1" doName="ValASG96" daName="setMag.f" fc="SP"/>
+                  </DataSet>
+                  <DataSet name="DSEVS2" desc="EV Schd 2">
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="NamPlt" daName="vendor" fc="DC"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="NamPlt" daName="swRev" fc="DC"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="SchdSt" daName="q" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="SchdEntr" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="EnaReq" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="DsaReq" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValMV" daName="mag.f" fc="MX"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="SchdPrio" daName="setVal" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="NumEntr" daName="setVal" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="SchdIntv" daName="setVal" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="EvtTrg" daName="setVal" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="SchdReuse" daName="setVal" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="StrTm0" daName="setTm" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="StrTm1" daName="setTm" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="StrTm1" daName="setCal.occ" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="StrTm1" daName="setCal.occType" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="StrTm1" daName="setCal.occPer" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="StrTm1" daName="setCal.weekDay" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="StrTm1" daName="setCal.month" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="StrTm1" daName="setCal.day" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="StrTm1" daName="setCal.hr" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="StrTm1" daName="setCal.mn" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG01" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG02" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG03" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG04" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG05" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG06" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG07" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG08" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG09" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG10" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG11" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG12" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG13" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG14" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG15" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG16" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG17" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG18" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG19" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG20" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG21" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG22" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG23" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG24" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG25" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG26" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG27" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG28" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG29" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG30" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG31" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG32" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG33" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG34" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG35" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG36" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG37" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG38" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG39" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG40" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG41" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG42" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG43" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG44" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG45" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG46" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG47" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG48" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG49" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG50" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG51" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG52" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG53" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG54" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG55" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG56" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG57" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG58" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG59" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG60" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG61" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG62" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG63" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG64" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG65" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG66" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG67" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG68" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG69" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG70" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG71" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG72" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG73" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG74" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG75" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG76" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG77" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG78" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG79" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG80" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG81" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG82" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG83" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG84" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG85" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG86" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG87" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG88" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG89" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG90" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG91" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG92" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG93" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG94" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG95" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="FSCH" lnInst="2" doName="ValASG96" daName="setMag.f" fc="SP"/>
+                  </DataSet>
+                  <DataSet name="LDEV1DS">
+                     <FCDA ldInst="LDEV1" lnClass="LLN0" doName="NamPlt" daName="vendor" fc="DC"/>
+                     <FCDA ldInst="LDEV1" lnClass="LLN0" doName="NamPlt" daName="swRev" fc="DC"/>
+                     <FCDA ldInst="LDEV1" lnClass="LLN0" doName="Beh" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="LLN0" doName="Health" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="LLN0" doName="Mod" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="DECP" lnInst="1" doName="Beh" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="DECP" lnInst="1" doName="GndSys" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="DECP" lnInst="1" doName="ElcRefid" daName="setVal" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="DECP" lnInst="1" doName="InclEclRef" daName="setSrcRef" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="DECP" lnInst="1" doName="VRefSet" daName="setMag.f" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="DECP" lnInst="1" doName="RefFrm" daName="setVal" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="DPMC" lnInst="1" doName="Beh" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="DPMC" lnInst="1" doName="DERRef" daName="setSrcRef" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="DPMC" lnInst="1" doName="EcpRef" daName="setSrcRef" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="DPMC" lnInst="1" doName="ReqTotVar" daName="mag.f" fc="MX"/>
+                     <FCDA ldInst="LDEV1" lnClass="DPMC" lnInst="1" doName="ReqTotW" daName="mag.f" fc="MX"/>
+                     <FCDA ldInst="LDEV1" lnClass="DSTO" lnInst="1" doName="Beh" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="DSTO" lnInst="1" doName="InclSto1" daName="setSrcRef" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="DSTO" lnInst="1" doName="EcpRef" daName="setSrcRef" fc="SP"/>
+                     <FCDA ldInst="LDEV1" lnClass="LPHD" lnInst="1" doName="PhyNam" daName="vendor" fc="DC"/>
+                     <FCDA ldInst="LDEV1" lnClass="LPHD" lnInst="1" doName="PhyNam" daName="swRev" fc="DC"/>
+                     <FCDA ldInst="LDEV1" lnClass="LPHD" lnInst="1" doName="PhyNam" daName="name" fc="DC"/>
+                     <FCDA ldInst="LDEV1" lnClass="LPHD" lnInst="1" doName="PhyHealth" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="LPHD" lnInst="1" doName="Proxy" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="XSWI" lnInst="1" doName="Beh" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="XSWI" lnInst="1" doName="Loc" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="XSWI" lnInst="1" doName="OpCnt" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="XSWI" lnInst="1" doName="SwTyp" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="XSWI" lnInst="1" doName="Pos" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="XSWI" lnInst="1" doName="BlkOpn" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="XSWI" lnInst="1" doName="BlkCls" daName="stVal" fc="ST"/>
+                     <FCDA ldInst="LDEV1" lnClass="XSWI" lnInst="1" doName="Pos" daName="ctlModel" fc="CF"/>
+                     <FCDA ldInst="LDEV1" lnClass="XSWI" lnInst="1" doName="BlkOpn" daName="ctlModel" fc="CF"/>
+                     <FCDA ldInst="LDEV1" lnClass="XSWI" lnInst="1" doName="BlkCls" daName="ctlModel" fc="CF"/>
+                     <FCDA ldInst="LDEV1" lnClass="XSWI" lnInst="1" doName="NamPlt" daName="vendor" fc="DC"/>
+                     <FCDA ldInst="LDEV1" lnClass="XSWI" lnInst="1" doName="NamPlt" daName="swRev" fc="DC"/>
+                  </DataSet>
+                  <ReportControl name="urcb01" desc="controle DEEV" datSet="DSEV" intgPd="0" confRev="1" bufTime="50" buffered="false" rptID="IEDEVLDEV1/LLN0$RP$urcb01" indexed="false">
+                     <TrgOps dchg="true" dupd="true"/>
+                     <OptFields timeStamp="true" reasonCode="true" dataSet="true" entryID="true"/>
+                     <RptEnabled max="4"/>
+                  </ReportControl>
+                  <ReportControl name="urcbev" desc="LDEV sans Sch" datSet="LDEV1DS" intgPd="0" confRev="1" bufTime="50" buffered="false" rptID="IEDEVLDEV1/LLN0$RP$urcbev" indexed="false">
+                     <TrgOps dchg="true" gi="true"/>
+                     <OptFields timeStamp="true" reasonCode="true" dataSet="true" dataRef="true" bufOvfl="true" entryID="true" configRef="true"/>
+                     <RptEnabled max="4"/>
+                  </ReportControl>
+                  <ReportControl name="urcbevc" desc="Controleur Schds" datSet="DSEVC" intgPd="0" confRev="1" bufTime="50" buffered="false" rptID="IEDEVLDEV1/LLN0$RP$urcbevc" indexed="false">
+                     <TrgOps dchg="true" gi="true"/>
+                     <OptFields timeStamp="true" reasonCode="true" dataSet="true" dataRef="true" bufOvfl="true" entryID="true" configRef="true"/>
+                     <RptEnabled max="4"/>
+                  </ReportControl>
+                  <ReportControl name="urcbevs1" desc="Schedule 1" datSet="DSEVS1" intgPd="0" confRev="1" bufTime="50" buffered="false" rptID="IEDEVLDEV1/LLN0$RP$urcbs1" indexed="false">
+                     <TrgOps dchg="true" gi="true"/>
+                     <OptFields timeStamp="true" reasonCode="true" dataSet="true" dataRef="true" bufOvfl="true" entryID="true" configRef="true"/>
+                     <RptEnabled max="4"/>
+                  </ReportControl>
+                  <ReportControl name="urcbevs2" desc="Schedule 2" datSet="DSEVS2" intgPd="0" confRev="1" bufTime="50" buffered="false" rptID="IEDEVLDEV1/LLN0$RP$urcbevs2" indexed="false">
+                     <TrgOps dchg="true" gi="true"/>
+                     <OptFields timeStamp="true" reasonCode="true" dataSet="true" dataRef="true" bufOvfl="true" entryID="true" configRef="true"/>
+                     <RptEnabled max="4"/>
+                  </ReportControl>
+                  <DOI name="NamPlt" desc="">
+                     <DAI name="vendor" valKind="RO">
+                        <Val>ZAMIREN</Val>
+                     </DAI>
+                     <DAI name="swRev" valKind="RO">
+                        <Val>1.0.0</Val>
+                     </DAI>
+                     <DAI name="ldNs" valKind="RO">
+                        <Val>IEC 61850-7-4:2007</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="Beh" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>on</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="Health" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>Ok</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="Mod" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>on</Val>
+                     </DAI>
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+               </LN0>
+               <LN lnClass="DECP" lnType="DECPZ" inst="1">
+                  <DOI name="Beh" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>on</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="ElcRefid" desc="">
+                     <DAI name="setVal" valKind="Conf">
+                        <Val>ECP4</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="InclEclRef" desc="">
+                     <DAI name="setSrcRef" valKind="Conf">
+                        <Val>IEDEVLDEV1/XSWI1</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="GndSys" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>Manual</Val>
+                     </DAI>
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="VRefSet" desc="">
+                     <SDI name="setMag">
+                        <DAI name="f" valKind="RO"/>
+                     </SDI>
+                  </DOI>
+                  <DOI name="RefFrm" desc="">
+                     <DAI name="setVal" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                  </DOI>
+               </LN>
+               <LN lnClass="DEEV" lnType="DEEVZ" inst="1">
+                  <DOI name="Beh" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>on</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="ConnTypSel" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>Not Applicable / Unknown</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="NamPlt" desc="">
+                     <DAI name="vendor" valKind="RO">
+                        <Val>ZAMIREN</Val>
+                     </DAI>
+                     <DAI name="swRev" valKind="RO">
+                        <Val>1.0.0</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="EVId" desc="">
+                     <DAI name="setVal" valKind="RO">
+                        <Val>peujoli</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="EMAId" desc="">
+                     <DAI name="setVal" valKind="RO">
+                        <Val>daniel</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="DptTm" desc="">
+                     <DAI name="setTm" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                     <SDI name="setCal">
+                        <DAI name="occType" valKind="Set">
+                           <Val>Time</Val>
+                        </DAI>
+                        <DAI name="occPer" valKind="Set">
+                           <Val>Day</Val>
+                        </DAI>
+                        <DAI name="weekDay" valKind="Set">
+                           <Val>Monday</Val>
+                        </DAI>
+                        <DAI name="month" valKind="Set">
+                           <Val>January</Val>
+                        </DAI>
+                     </SDI>
+                  </DOI>
+                  <DOI name="WhTgt" desc="">
+                     <SDI name="setMag">
+                        <DAI name="f" valKind="Set" desc="Energie de Charge souhaitee">
+                           <Val>0</Val>
+                        </DAI>
+                     </SDI>
+                  </DOI>
+                  <DOI name="WChaTgt" desc="">
+                     <SDI name="setMag">
+                        <DAI name="f" valKind="Set" desc="Puissance max possible">
+                           <Val>1000</Val>
+                        </DAI>
+                     </SDI>
+                  </DOI>
+                  <DOI name="WCurrent" desc="">
+                     <SDI name="mag">
+                        <DAI name="f" valKind="Set" desc="Puissance de charge courante">
+                           <Val>0</Val>
+                        </DAI>
+                     </SDI>
+                  </DOI>
+                  <DOI name="EVSt" desc="">
+                     <DAI name="stVal" valKind="Set" desc="Etat de charge du vehicule">
+                        <Val>Not Applicable / Unknown</Val>
+                     </DAI>
+                  </DOI>
+               </LN>
+               <LN lnClass="DPMC" lnType="DPMCZ" inst="1">
+                  <DOI name="NamPlt" desc="">
+                     <DAI name="vendor" valKind="Set">
+                        <Val>ZAMIREN</Val>
+                     </DAI>
+                     <DAI name="swRev" valKind="Set">
+                        <Val>1.0.0</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="Beh" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>on</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="FctEna" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>1</Val>
+                     </DAI>
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="WLimSpt1" desc="">
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="WLimSpt2" desc="">
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="WLimSpt3" desc="">
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+               </LN>
+               <LN lnClass="DSTO" lnType="DSTOEV" inst="1">
+                  <DOI name="Beh" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>on</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="NamPlt" desc="">
+                     <DAI name="vendor" valKind="RO">
+                        <Val>ZAMIREN</Val>
+                     </DAI>
+                     <DAI name="swRev" valKind="RO">
+                        <Val>1.0.0</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="InclSto1" desc="">
+                     <DAI name="setSrcRef" valKind="Set">
+                        <Val>LDEV1/DEREV1</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="WSpt" desc="">
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="WhMaxRtg" desc="">
+                     <SDI name="setMag">
+                        <DAI name="f" valKind="Set">
+                           <Val>120000</Val>
+                        </DAI>
+                     </SDI>
+                  </DOI>
+                  <DOI name="WhMinRtg" desc="">
+                     <SDI name="setMag">
+                        <DAI name="f" valKind="Set">
+                           <Val>30000</Val>
+                        </DAI>
+                     </SDI>
+                  </DOI>
+               </LN>
+               <LN lnClass="DWMX" lnType="DWMXZ" inst="1">
+                  <DOI name="NamPlt" desc="">
+                     <DAI name="vendor" valKind="RO">
+                        <Val>ZAMIREN</Val>
+                     </DAI>
+                     <DAI name="swRev" valKind="RO">
+                        <Val>1.0.0</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="Beh" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>on</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="WLimSpt" desc="">
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="FctEna" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>1</Val>
+                     </DAI>
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+               </LN>
+               <LN lnClass="FSCC" lnType="FSCCZ" inst="1">
+                  <DOI name="NamPlt" desc="">
+                     <DAI name="vendor" valKind="RO">
+                        <Val>ZAMIREN</Val>
+                     </DAI>
+                     <DAI name="swRev" valKind="RO">
+                        <Val>1.0.0</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="Beh" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>on</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="CtlEnt" desc="">
+                     <DAI name="setSrcRef" valKind="Set">
+                        <Val>LDEV1/DPMC1.WLimSpt2.mxVal.f</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="Schd1" desc="">
+                     <DAI name="setSrcRef" valKind="Set">
+                        <Val>LDEV1/FSCH1</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="Schd2" desc="">
+                     <DAI name="setSrcRef" valKind="Set">
+                        <Val>LDEV1/FSCH2</Val>
+                     </DAI>
+                  </DOI>
+               </LN>
+               <LN lnClass="FSCH" lnType="FSCHZ" inst="1">
+                  <DOI name="NamPlt" desc="">
+                     <DAI name="vendor" valKind="RO">
+                        <Val>ZAMIREN</Val>
+                     </DAI>
+                     <DAI name="swRev" valKind="RO">
+                        <Val>1.0.0</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="Beh" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>on</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="SchdSt" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>Not ready</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="EnaReq" desc="">
+                     <SDI name="Oper">
+                        <DAI name="ctlVal" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                        <SDI name="origin">
+                           <DAI name="orCat" valKind="Set">
+                              <Val>station-control</Val>
+                           </DAI>
+                        </SDI>
+                        <DAI name="Test" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                     </SDI>
+                     <DAI name="stVal" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="DsaReq" desc="">
+                     <SDI name="Oper">
+                        <DAI name="ctlVal" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                        <SDI name="origin">
+                           <DAI name="orCat" valKind="Set">
+                              <Val>station-control</Val>
+                           </DAI>
+                        </SDI>
+                        <DAI name="Test" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                     </SDI>
+                     <DAI name="stVal" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="EvtTrg" desc="">
+                     <DAI name="setVal" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="SchdReuse" desc="">
+                     <DAI name="setVal" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="IntvTyp" desc="">
+                     <DAI name="setVal" valKind="Set">
+                        <Val>Unknown</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="StrTm0" desc="">
+                     <DAI name="setTm" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                     <SDI name="setCal">
+                        <DAI name="occ" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                        <DAI name="occType" valKind="Set">
+                           <Val>Time</Val>
+                        </DAI>
+                        <DAI name="occPer" valKind="Set">
+                           <Val>Day</Val>
+                        </DAI>
+                        <DAI name="weekDay" valKind="Set">
+                           <Val>Monday</Val>
+                        </DAI>
+                        <DAI name="month" valKind="Set">
+                           <Val>January</Val>
+                        </DAI>
+                     </SDI>
+                  </DOI>
+                  <DOI name="StrTm1" desc="">
+                     <DAI name="setTm" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                     <SDI name="setCal">
+                        <DAI name="occ" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                        <DAI name="occType" valKind="Set">
+                           <Val>Time</Val>
+                        </DAI>
+                        <DAI name="occPer" valKind="Set">
+                           <Val>Day</Val>
+                        </DAI>
+                        <DAI name="weekDay" valKind="Set">
+                           <Val>Monday</Val>
+                        </DAI>
+                        <DAI name="month" valKind="Set">
+                           <Val>January</Val>
+                        </DAI>
+                     </SDI>
+                  </DOI>
+               </LN>
+               <LN lnClass="FSCH" lnType="FSCHZ" inst="2">
+                  <DOI name="NamPlt" desc="">
+                     <DAI name="vendor" valKind="RO">
+                        <Val>ZAMIREN</Val>
+                     </DAI>
+                     <DAI name="swRev" valKind="RO">
+                        <Val>1.0.0</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="Beh" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>on</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="SchdSt" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>Not ready</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="EnaReq" desc="">
+                     <SDI name="Oper">
+                        <DAI name="ctlVal" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                        <SDI name="origin">
+                           <DAI name="orCat" valKind="Set">
+                              <Val>station-control</Val>
+                           </DAI>
+                        </SDI>
+                        <DAI name="Test" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                     </SDI>
+                     <DAI name="stVal" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="DsaReq" desc="">
+                     <SDI name="Oper">
+                        <DAI name="ctlVal" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                        <SDI name="origin">
+                           <DAI name="orCat" valKind="Set">
+                              <Val>station-control</Val>
+                           </DAI>
+                        </SDI>
+                        <DAI name="Test" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                     </SDI>
+                     <DAI name="stVal" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="SchdPrio" desc="">
+                     <DAI name="setVal" valKind="Set">
+                        <Val>2</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="SchdIntv" desc="">
+                     <DAI name="setVal" valKind="Set">
+                        <Val>15</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="EvtTrg" desc="">
+                     <DAI name="setVal" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="SchdReuse" desc="">
+                     <DAI name="setVal" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="IntvTyp" desc="">
+                     <DAI name="setVal" valKind="Set">
+                        <Val>Unknown</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="StrTm0" desc="">
+                     <DAI name="setTm" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                     <SDI name="setCal">
+                        <DAI name="occ" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                        <DAI name="occType" valKind="Set">
+                           <Val>Time</Val>
+                        </DAI>
+                        <DAI name="occPer" valKind="Set">
+                           <Val>Day</Val>
+                        </DAI>
+                        <DAI name="weekDay" valKind="Set">
+                           <Val>Monday</Val>
+                        </DAI>
+                        <DAI name="month" valKind="Set">
+                           <Val>January</Val>
+                        </DAI>
+                     </SDI>
+                  </DOI>
+                  <DOI name="StrTm1" desc="">
+                     <DAI name="setTm" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                     <SDI name="setCal">
+                        <DAI name="occ" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                        <DAI name="occType" valKind="Set">
+                           <Val>Time</Val>
+                        </DAI>
+                        <DAI name="occPer" valKind="Set">
+                           <Val>Day</Val>
+                        </DAI>
+                        <DAI name="weekDay" valKind="Set">
+                           <Val>Monday</Val>
+                        </DAI>
+                        <DAI name="month" valKind="Set">
+                           <Val>January</Val>
+                        </DAI>
+                     </SDI>
+                  </DOI>
+               </LN>
+               <LN lnClass="LPHD" lnType="LPHDZ" inst="1">
+                  <DOI name="PhyNam" desc="">
+                     <DAI name="vendor" valKind="RO">
+                        <Val>ZAMIREN</Val>
+                     </DAI>
+                     <DAI name="name" valKind="Set">
+                        <Val>LDEV1</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="PhyHealth" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>Ok</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="Proxy" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                  </DOI>
+               </LN>
+               <LN lnClass="XSWI" lnType="XSWIZ" inst="1">
+                  <DOI name="Beh" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>on</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="Loc" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="SwTyp" desc="">
+                     <DAI name="stVal" valKind="RO">
+                        <Val>Load Break</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="Pos" desc="">
+                     <DAI name="stVal" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="BlkOpn" desc="">
+                     <SDI name="Oper">
+                        <DAI name="ctlVal" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                        <SDI name="origin">
+                           <DAI name="orCat" valKind="Set">
+                              <Val>station-control</Val>
+                           </DAI>
+                        </SDI>
+                        <DAI name="Test" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                     </SDI>
+                     <DAI name="stVal" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="BlkCls" desc="">
+                     <SDI name="Oper">
+                        <DAI name="ctlVal" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                        <SDI name="origin">
+                           <DAI name="orCat" valKind="Set">
+                              <Val>station-control</Val>
+                           </DAI>
+                        </SDI>
+                        <DAI name="Test" valKind="Set">
+                           <Val>0</Val>
+                        </DAI>
+                     </SDI>
+                     <DAI name="stVal" valKind="Set">
+                        <Val>0</Val>
+                     </DAI>
+                     <DAI name="ctlModel" valKind="Set">
+                        <Val>direct-with-normal-security</Val>
+                     </DAI>
+                  </DOI>
+                  <DOI name="NamPlt" desc="">
+                     <DAI name="vendor" valKind="RO">
+                        <Val>ZAMIREN</Val>
+                     </DAI>
+                     <DAI name="swRev" valKind="Set">
+                        <Val>1.0.0</Val>
+                     </DAI>
+                  </DOI>
+               </LN>
+            </LDevice>
+         </Server>
+      </AccessPoint>
+   </IED>
+   <DataTypeTemplates>
+      <LNodeType id="LLN0Z" lnClass="LLN0">
+         <DO name="NamPlt" type="LPL_LLN0"/>
+         <DO name="Beh" type="ENS_Beh"/>
+         <DO name="Health" type="ENS_Health"/>
+         <DO name="Mod" type="ENC_Mod"/>
+      </LNodeType>
+      <LNodeType id="LPHDZ" lnClass="LPHD">
+         <DO name="PhyNam" type="DPLZ"/>
+         <DO name="PhyHealth" type="ENS_Health"/>
+         <DO name="Proxy" type="SPSZ"/>
+      </LNodeType>
+      <LNodeType id="DECPZ" lnClass="DECP">
+         <DO name="Beh" type="ENS_Beh"/>
+         <DO name="ElcRefid" type="VSGZ"/>
+         <DO name="InclEclRef" type="ORGZ"/>
+         <DO name="GndSys" type="ENC_GroundingSystem"/>
+         <DO name="VRefSet" type="ASGZ"/>
+         <DO name="RefFrm" type="SPGZ"/>
+         <DO name="NamPlt" type="LPL"/>
+         <DO name="ElcMsRef1" type="ORG"/>
+      </LNodeType>
+      <LNodeType id="XSWIZ" lnClass="XSWI">
+         <DO name="Beh" type="ENS_Beh"/>
+         <DO name="Loc" type="SPSZ"/>
+         <DO name="OpCnt" type="INSZ"/>
+         <DO name="SwTyp" type="ENS_SwTyp"/>
+         <DO name="Pos" type="DPCZ"/>
+         <DO name="BlkOpn" type="SPCZ"/>
+         <DO name="BlkCls" type="SPCZ"/>
+         <DO name="NamPlt" type="LPLZ"/>
+      </LNodeType>
+      <LNodeType id="DEEVZ" lnClass="DEEV">
+         <DO name="Beh" type="ENS_Beh"/>
+         <DO name="ConnTypSel" type="ENS_EVACConnectionCharging"/>
+         <DO name="NamPlt" type="LPLZ"/>
+         <DO name="EEName" type="DPLZ"/>
+         <DO name="Soc" type="MVZ"/>
+         <DO name="EVId" type="VSGZ"/>
+         <DO name="EMAId" type="VSGZ"/>
+         <DO name="DptTm" type="TSGZ"/>
+         <DO name="WhTgt" type="ASGZ"/>
+         <DO name="WChaTgt" type="ASGZ"/>
+         <DO name="WCurrent" type="MVZ"/>
+         <DO name="EVSt" type="EVState"/>
+         <DO name="EVSERef" type="ORGZ"/>
+         <DO name="AlmMsg" type="VSGZ"/>
+         <DO name="StartTm" type="TSG"/>
+      </LNodeType>
+      <LNodeType id="FSCCZ" lnClass="FSCC">
+         <DO name="NamPlt" type="LPLZ"/>
+         <DO name="Beh" type="ENS_Beh"/>
+         <DO name="ActSchdRef" type="ORSZ"/>
+         <DO name="CtlEnt" type="ORGZ"/>
+         <DO name="ValMV" type="MVZ"/>
+         <DO name="Schd1" type="ORGZ"/>
+         <DO name="Schd2" type="ORGZ"/>
+         <DO name="Schd3" type="ORGZ"/>
+      </LNodeType>
+      <LNodeType id="FSCHZ" lnClass="FSCH">
+         <DO name="NamPlt" type="LPLZ"/>
+         <DO name="Beh" type="ENS_Beh"/>
+         <DO name="SchdSt" type="ENS_ScheduleState"/>
+         <DO name="SchdEntr" type="INSZ"/>
+         <DO name="ValMV" type="MVZ"/>
+         <DO name="EnaReq" type="SPCZ"/>
+         <DO name="DsaReq" type="SPCZ"/>
+         <DO name="SchdPrio" type="INGZ"/>
+         <DO name="NumEntr" type="INGZ"/>
+         <DO name="SchdIntv" type="INGZ"/>
+         <DO name="EvtTrg" type="SPGZ"/>
+         <DO name="SchdReuse" type="SPGZ"/>
+         <DO name="IntvTyp" type="ENG_ScheduleInterval"/>
+         <DO name="StrTm0" type="TSGZ"/>
+         <DO name="StrTm1" type="TSGZ"/>
+         <DO name="IntvPer" type="INGZ"/>
+         <DO name="ValASG01" type="ASGZ"/>
+         <DO name="ValASG02" type="ASGZ"/>
+         <DO name="ValASG03" type="ASGZ"/>
+         <DO name="ValASG04" type="ASGZ"/>
+         <DO name="ValASG05" type="ASGZ"/>
+         <DO name="ValASG06" type="ASGZ"/>
+         <DO name="ValASG07" type="ASGZ"/>
+         <DO name="ValASG08" type="ASGZ"/>
+         <DO name="ValASG09" type="ASGZ"/>
+         <DO name="ValASG10" type="ASGZ"/>
+         <DO name="ValASG11" type="ASGZ"/>
+         <DO name="ValASG12" type="ASGZ"/>
+         <DO name="ValASG13" type="ASGZ"/>
+         <DO name="ValASG14" type="ASGZ"/>
+         <DO name="ValASG15" type="ASGZ"/>
+         <DO name="ValASG16" type="ASGZ"/>
+         <DO name="ValASG17" type="ASGZ"/>
+         <DO name="ValASG18" type="ASGZ"/>
+         <DO name="ValASG19" type="ASGZ"/>
+         <DO name="ValASG20" type="ASGZ"/>
+         <DO name="ValASG21" type="ASGZ"/>
+         <DO name="ValASG22" type="ASGZ"/>
+         <DO name="ValASG23" type="ASGZ"/>
+         <DO name="ValASG24" type="ASGZ"/>
+         <DO name="ValASG25" type="ASGZ"/>
+         <DO name="ValASG26" type="ASGZ"/>
+         <DO name="ValASG27" type="ASGZ"/>
+         <DO name="ValASG28" type="ASGZ"/>
+         <DO name="ValASG29" type="ASGZ"/>
+         <DO name="ValASG30" type="ASGZ"/>
+         <DO name="ValASG31" type="ASGZ"/>
+         <DO name="ValASG32" type="ASGZ"/>
+         <DO name="ValASG33" type="ASGZ"/>
+         <DO name="ValASG34" type="ASGZ"/>
+         <DO name="ValASG35" type="ASGZ"/>
+         <DO name="ValASG36" type="ASGZ"/>
+         <DO name="ValASG37" type="ASGZ"/>
+         <DO name="ValASG38" type="ASGZ"/>
+         <DO name="ValASG39" type="ASGZ"/>
+         <DO name="ValASG40" type="ASGZ"/>
+         <DO name="ValASG41" type="ASGZ"/>
+         <DO name="ValASG42" type="ASGZ"/>
+         <DO name="ValASG43" type="ASGZ"/>
+         <DO name="ValASG44" type="ASGZ"/>
+         <DO name="ValASG45" type="ASGZ"/>
+         <DO name="ValASG46" type="ASGZ"/>
+         <DO name="ValASG47" type="ASGZ"/>
+         <DO name="ValASG48" type="ASGZ"/>
+         <DO name="ValASG49" type="ASGZ"/>
+         <DO name="ValASG50" type="ASGZ"/>
+         <DO name="ValASG51" type="ASGZ"/>
+         <DO name="ValASG52" type="ASGZ"/>
+         <DO name="ValASG53" type="ASGZ"/>
+         <DO name="ValASG54" type="ASGZ"/>
+         <DO name="ValASG55" type="ASGZ"/>
+         <DO name="ValASG56" type="ASGZ"/>
+         <DO name="ValASG57" type="ASGZ"/>
+         <DO name="ValASG58" type="ASGZ"/>
+         <DO name="ValASG59" type="ASGZ"/>
+         <DO name="ValASG60" type="ASGZ"/>
+         <DO name="ValASG61" type="ASGZ"/>
+         <DO name="ValASG62" type="ASGZ"/>
+         <DO name="ValASG63" type="ASGZ"/>
+         <DO name="ValASG64" type="ASGZ"/>
+         <DO name="ValASG65" type="ASGZ"/>
+         <DO name="ValASG66" type="ASGZ"/>
+         <DO name="ValASG67" type="ASGZ"/>
+         <DO name="ValASG68" type="ASGZ"/>
+         <DO name="ValASG69" type="ASGZ"/>
+         <DO name="ValASG70" type="ASGZ"/>
+         <DO name="ValASG71" type="ASGZ"/>
+         <DO name="ValASG72" type="ASGZ"/>
+         <DO name="ValASG73" type="ASGZ"/>
+         <DO name="ValASG74" type="ASGZ"/>
+         <DO name="ValASG75" type="ASGZ"/>
+         <DO name="ValASG76" type="ASGZ"/>
+         <DO name="ValASG77" type="ASGZ"/>
+         <DO name="ValASG78" type="ASGZ"/>
+         <DO name="ValASG79" type="ASGZ"/>
+         <DO name="ValASG80" type="ASGZ"/>
+         <DO name="ValASG81" type="ASGZ"/>
+         <DO name="ValASG82" type="ASGZ"/>
+         <DO name="ValASG83" type="ASGZ"/>
+         <DO name="ValASG84" type="ASGZ"/>
+         <DO name="ValASG85" type="ASGZ"/>
+         <DO name="ValASG86" type="ASGZ"/>
+         <DO name="ValASG87" type="ASGZ"/>
+         <DO name="ValASG88" type="ASGZ"/>
+         <DO name="ValASG89" type="ASGZ"/>
+         <DO name="ValASG90" type="ASGZ"/>
+         <DO name="ValASG91" type="ASGZ"/>
+         <DO name="ValASG92" type="ASGZ"/>
+         <DO name="ValASG93" type="ASGZ"/>
+         <DO name="ValASG94" type="ASGZ"/>
+         <DO name="ValASG95" type="ASGZ"/>
+         <DO name="ValASG96" type="ASGZ"/>
+      </LNodeType>
+      <LNodeType id="DSTOEV" lnClass="DSTO">
+         <DO name="Beh" type="ENS_Beh"/>
+         <DO name="EqSto" type="ORG"/>
+         <DO name="NamPlt" type="LPLZ"/>
+         <DO name="DERUnit" type="ORGZ"/>
+         <DO name="SocWh" type="MVZ"/>
+         <DO name="WSpt" type="APCZ"/>
+         <DO name="WhMaxRtg" type="ASGZ"/>
+         <DO name="WhMinRtg" type="ASGZ"/>
+         <DO name="InclSto1" type="ORG"/>
+         <DO name="InclSto2" type="ORG"/>
+         <DO name="InclSto3" type="ORG"/>
+      </LNodeType>
+      <LNodeType id="DPMCZ" lnClass="DPMC">
+         <DO name="NamPlt" type="LPL"/>
+         <DO name="Beh" type="ENS_Beh"/>
+         <DO name="DERRef" type="ORG"/>
+         <DO name="EcpRef" type="ORG"/>
+         <DO name="ReqW" type="MV"/>
+         <DO name="ReqTotVar" type="MV"/>
+         <DO name="ReqTotW" type="MV"/>
+         <DO name="FctEna" type="SPC"/>
+         <DO name="WLimSpt1" type="APCZ"/>
+         <DO name="WLimSpt2" type="APCZ"/>
+         <DO name="WLimSpt3" type="APCZ"/>
+         <DO name="ReqW1" type="MV"/>
+         <DO name="ReqW2" type="MV"/>
+         <DO name="ReqW3" type="MV"/>
+      </LNodeType>
+      <LNodeType id="DWMXZ" lnClass="DWMX">
+         <DO name="NamPlt" type="LPL"/>
+         <DO name="Beh" type="ENS_Beh"/>
+         <DO name="ReqWLim" type="MVZ"/>
+         <DO name="WLimSpt" type="APCZ"/>
+         <DO name="WLimSet" type="ASGZ"/>
+         <DO name="FctEna" type="SPC"/>
+         <DO name="EcpRef" type="ORG"/>
+      </LNodeType>
+      <DOType id="LPL_LLN0" cdc="LPL">
+         <DA name="vendor" bType="VisString255" fc="DC"/>
+         <DA name="swRev" bType="VisString255" fc="DC"/>
+         <DA name="ldNs" bType="VisString255" fc="EX" desc="shall be included in LLN0 only;"/>
+      </DOType>
+      <DOType id="ENS_Beh" cdc="ENS">
+         <DA name="stVal" bType="Enum" type="Beh" fc="ST" dchg="true"/>
+         <DA name="q" bType="Quality" fc="ST" qchg="true"/>
+         <DA name="t" bType="Timestamp" fc="ST"/>
+      </DOType>
+      <DOType id="ENS_Health" cdc="ENS">
+         <DA name="stVal" bType="Enum" type="Health" fc="ST" dchg="true"/>
+         <DA name="q" bType="Quality" fc="ST" qchg="true"/>
+         <DA name="t" bType="Timestamp" fc="ST"/>
+      </DOType>
+      <DOType id="ENC_Mod" cdc="ENC">
+         <DA name="stVal" bType="Enum" type="Mod" fc="ST" dchg="true"/>
+         <DA name="q" bType="Quality" fc="ST" qchg="true"/>
+         <DA name="t" bType="Timestamp" fc="ST"/>
+         <DA name="ctlModel" bType="Enum" type="CtlModels" fc="CF" dchg="true"/>
+      </DOType>
+      <DOType id="DPL" cdc="DPL">
+         <DA name="vendor" fc="DC" bType="VisString255"/>
+         <DA name="name" fc="DC" bType="VisString64"/>
+      </DOType>
+      <DOType id="SPS" cdc="SPS">
+         <DA name="stVal" bType="BOOLEAN" fc="ST" dchg="true" desc="TRUE | FALSE"/>
+         <DA name="q" bType="Quality" fc="ST" qchg="true"/>
+         <DA name="t" bType="Timestamp" fc="ST"/>
+      </DOType>
+      <DOType id="VSG" cdc="VSG">
+         <DA name="setVal" fc="SP" dchg="true" bType="VisString255"/>
+      </DOType>
+      <DOType id="ORG" cdc="ORG">
+         <DA name="setSrcRef" bType="ObjRef" fc="SP" dchg="true" desc="Object Reference"/>
+         <DA name="setTstRef" bType="ObjRef" fc="SP" dchg="true" desc="Object Reference"/>
+      </DOType>
+      <DOType id="ENC_GroundingSystem" cdc="ENC">
+         <DA name="stVal" bType="Enum" type="OpModSyn" fc="ST" dchg="true"/>
+         <DA name="q" bType="Quality" fc="ST" qchg="true"/>
+         <DA name="t" bType="Timestamp" fc="ST"/>
+         <DA name="ctlModel" bType="Enum" type="CtlModels" fc="CF" dchg="true"/>
+      </DOType>
+      <DOType id="ASG" cdc="ASG">
+         <DA name="setMag" fc="SP" dchg="true" dupd="true" type="AnalogueValue" bType="Struct"/>
+      </DOType>
+      <DOType id="SPG" cdc="SPG">
+         <DA name="setVal" fc="SP" dchg="true" dupd="true" bType="BOOLEAN" desc="off (FALSE) | on (TRUE)"/>
+      </DOType>
+      <DOType id="INS" cdc="INS">
+         <DA name="stVal" fc="ST" dchg="true" dupd="true" bType="INT32"/>
+         <DA name="q" fc="ST" qchg="true" bType="Quality"/>
+         <DA name="t" fc="ST" bType="Timestamp"/>
+      </DOType>
+      <DOType id="ENS_SwTyp" cdc="ENS">
+         <DA name="stVal" bType="Enum" type="SwTyp" fc="ST" dchg="true" dupd="true"/>
+         <DA name="q" bType="Quality" fc="ST" qchg="true"/>
+         <DA name="t" bType="Timestamp" fc="ST"/>
+      </DOType>
+      <DOType id="DPC" cdc="DPC">
+         <DA name="stVal" bType="Dbpos" fc="ST" dchg="true" dupd="true" desc="intermediate-state | off | on | bad-state"/>
+         <DA name="q" bType="Quality" fc="ST" qchg="true"/>
+         <DA name="t" bType="Timestamp" fc="ST"/>
+         <DA name="ctlModel" bType="Enum" type="CtlModels" fc="CF" dchg="true"/>
+      </DOType>
+      <DOType id="SPC" cdc="SPC">
+         <DA name="Oper" fc="CO" type="Oper_SPC_DPC" bType="Struct"/>
+         <DA name="stVal" fc="ST" dchg="true" dupd="true" bType="BOOLEAN" desc="FALSE | TRUE"/>
+         <DA name="q" fc="ST" qchg="true" bType="Quality"/>
+         <DA name="t" fc="ST" bType="Timestamp"/>
+         <DA name="ctlModel" fc="CF" dchg="true" dupd="true" type="CtlModels" bType="Enum"/>
+      </DOType>
+      <DOType id="ENS_EVACConnectionCharging" cdc="ENS">
+         <DA name="stVal" bType="Enum" type="EVACConnectionCharging" fc="ST" dchg="true" dupd="true"/>
+         <DA name="q" bType="Quality" fc="ST" qchg="true"/>
+         <DA name="t" bType="Timestamp" fc="ST"/>
+      </DOType>
+      <DOType id="LPL" cdc="LPL">
+         <DA name="vendor" bType="VisString255" fc="DC"/>
+         <DA name="swRev" bType="VisString255" fc="DC"/>
+      </DOType>
+      <DOType id="ORS" cdc="ORS">
+         <DA name="stVal" bType="ObjRef" fc="ST" dchg="true" desc="Object Reference"/>
+         <DA name="q" bType="Quality" fc="ST" qchg="true"/>
+         <DA name="t" bType="Timestamp" fc="ST"/>
+      </DOType>
+      <DOType id="MV" cdc="MV">
+         <DA name="mag" bType="Struct" type="AnalogueValue" fc="MX" dchg="true" dupd="true"/>
+         <DA name="q" bType="Quality" fc="MX" qchg="true"/>
+         <DA name="t" bType="Timestamp" fc="MX"/>
+      </DOType>
+      <DOType id="ENS_ScheduleState" cdc="ENS">
+         <DA name="stVal" bType="Enum" type="ScheduleState_kind" fc="ST" dchg="true" dupd="true"/>
+         <DA name="q" bType="Quality" fc="ST" qchg="true"/>
+         <DA name="t" bType="Timestamp" fc="ST"/>
+      </DOType>
+      <DOType id="ING" cdc="ING">
+         <DA name="setVal" fc="SP" dchg="true" bType="INT32"/>
+      </DOType>
+      <DOType id="ENG_ScheduleInterval" cdc="ENG">
+         <DA name="setVal" bType="Enum" type="ScheduleInterval_kind" fc="SE"/>
+      </DOType>
+      <DOType id="TSG" cdc="TSG">
+         <DA name="setTm" fc="SP" dchg="true" bType="Timestamp"/>
+         <DA name="setCal" fc="SP" dchg="true" type="CalendarTime" bType="Struct"/>
+      </DOType>
+      <DOType id="EVState" cdc="ENS">
+         <DA name="stVal" bType="Enum" type="ENS_EVState" fc="ST" dchg="true" dupd="true"/>
+         <DA name="q" bType="Quality" fc="ST" qchg="true"/>
+         <DA name="t" bType="Timestamp" fc="ST"/>
+      </DOType>
+      <DOType id="ASGZ" cdc="ASG">
+         <DA name="setMag" fc="SP" dchg="true" type="AnalogueValue" bType="Struct"/>
+      </DOType>
+      <DOType id="DPCZ" cdc="DPC">
+         <DA name="Oper" fc="CO" type="Oper_SPC_DPC" bType="Struct"/>
+         <DA name="stVal" fc="ST" dchg="true" bType="Dbpos" desc="intermediate-state | off | on | bad-state"/>
+         <DA name="q" fc="ST" qchg="true" bType="Quality"/>
+         <DA name="t" fc="ST" bType="Timestamp"/>
+         <DA name="ctlModel" fc="CF" dchg="true" type="CtlModels" bType="Enum"/>
+      </DOType>
+      <DOType id="DPLZ" cdc="DPL">
+         <DA name="vendor" fc="DC" bType="VisString255"/>
+         <DA name="swRev" fc="DC" bType="VisString255"/>
+         <DA name="name" fc="DC" bType="VisString64"/>
+      </DOType>
+      <DOType id="INGZ" cdc="ING">
+         <DA name="setVal" fc="SP" dchg="true" bType="INT32"/>
+      </DOType>
+      <DOType id="INSZ" cdc="INS">
+         <DA name="stVal" fc="ST" dchg="true" dupd="true" bType="INT32"/>
+         <DA name="q" fc="ST" qchg="true" bType="Quality"/>
+         <DA name="t" fc="ST" bType="Timestamp"/>
+      </DOType>
+      <DOType id="LPLZ" cdc="LPL">
+         <DA name="vendor" fc="DC" bType="VisString255"/>
+         <DA name="swRev" fc="DC" bType="VisString255"/>
+      </DOType>
+      <DOType id="MVZ" cdc="MV">
+         <DA name="mag" fc="MX" dchg="true" dupd="true" type="AnalogueValue" bType="Struct"/>
+         <DA name="q" fc="MX" qchg="true" bType="Quality"/>
+         <DA name="t" fc="MX" bType="Timestamp"/>
+      </DOType>
+      <DOType id="ORGZ" cdc="ORG">
+         <DA name="setSrcRef" fc="SP" dchg="true" bType="ObjRef" desc="Object Reference"/>
+         <DA name="intAddr" fc="SP" dchg="true" bType="VisString255"/>
+      </DOType>
+      <DOType id="SPCZ" cdc="SPC">
+         <DA name="Oper" fc="CO" type="Oper_SPC_DPC" bType="Struct"/>
+         <DA name="stVal" fc="ST" dchg="true" dupd="true" bType="BOOLEAN" desc="FALSE | TRUE"/>
+         <DA name="q" fc="ST" qchg="true" bType="Quality"/>
+         <DA name="t" fc="ST" bType="Timestamp"/>
+         <DA name="ctlModel" fc="CF" dchg="true" type="CtlModels" bType="Enum"/>
+      </DOType>
+      <DOType id="SPGZ" cdc="SPG">
+         <DA name="setVal" fc="SP" dchg="true" bType="BOOLEAN" desc="off (FALSE) | on (TRUE)"/>
+      </DOType>
+      <DOType id="SPSZ" cdc="SPS">
+         <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN" desc="TRUE | FALSE"/>
+         <DA name="q" fc="ST" qchg="true" bType="Quality"/>
+         <DA name="t" fc="ST" bType="Timestamp"/>
+      </DOType>
+      <DOType id="TSGZ" cdc="TSG">
+         <DA name="setTm" fc="SP" dchg="true" bType="Timestamp"/>
+         <DA name="setCal" fc="SP" dchg="true" type="CalendarTime" bType="Struct"/>
+      </DOType>
+      <DOType id="VSGZ" cdc="VSG">
+         <DA name="setVal" fc="SP" dchg="true" bType="VisString255"/>
+      </DOType>
+      <DOType id="ORSZ" cdc="ORS">
+         <DA name="stVal" fc="ST" dchg="true" bType="ObjRef" desc="Object Reference"/>
+         <DA name="q" fc="ST" qchg="true" bType="Quality"/>
+         <DA name="t" fc="ST" bType="Timestamp"/>
+      </DOType>
+      <DOType id="APC" cdc="APC">
+         <DA name="mxVal" bType="Struct" type="AnalogueValue" fc="MX" dchg="true"/>
+         <DA name="q" bType="Quality" fc="MX" qchg="true"/>
+         <DA name="t" bType="Timestamp" fc="MX"/>
+         <DA name="ctlModel" bType="Enum" type="CtlModels" fc="CF" dchg="true"/>
+      </DOType>
+      <DOType id="APCZ" cdc="APC">
+         <DA name="Oper" fc="CO" type="Oper_APC" bType="Struct"/>
+         <DA name="origin" fc="MX" type="Originator" bType="Struct"/>
+         <DA name="ctlNum" fc="MX" bType="INT8U" desc="0..255"/>
+         <DA name="mxVal" fc="MX" dchg="true" type="AnalogueValue" bType="Struct"/>
+         <DA name="q" fc="MX" qchg="true" bType="Quality"/>
+         <DA name="t" fc="MX" bType="Timestamp"/>
+         <DA name="ctlModel" fc="CF" dchg="true" type="CtlModels" bType="Enum"/>
+      </DOType>
+      <DAType id="AnalogueValue">
+         <BDA name="f" bType="FLOAT32" desc="The value of f shall be the FLOAT representation of the measured value. f shall represent the technological value in SI units."/>
+      </DAType>
+      <DAType id="CalendarTime">
+         <BDA name="occ" bType="INT16U" desc="The x start (lower left) value of a cell."/>
+         <BDA name="occType" bType="Enum" type="occType" desc="The x end (upper right) value of a cell."/>
+         <BDA name="occPer" bType="Enum" type="occPer" desc="The y start (lower left) value of a cell."/>
+         <BDA name="weekDay" bType="Enum" type="weekDay" desc="The y end (upper right) value of a cell."/>
+         <BDA name="month" bType="Enum" type="month" desc="The y end (upper right) value of a cell."/>
+         <BDA name="day" bType="INT8U" desc="The y end (upper right) value of a cell."/>
+         <BDA name="hr" bType="INT8U" desc="0..23 hour"/>
+         <BDA name="mn" bType="INT8U" desc="0..59 minute"/>
+      </DAType>
+      <DAType id="SPCOperate_1">
+         <BDA name="ctlVal" bType="BOOLEAN"/>
+         <BDA name="origin" type="Originator" bType="Struct"/>
+         <BDA name="ctlNum" bType="INT8U"/>
+         <BDA name="T" bType="Timestamp"/>
+         <BDA name="Test" bType="BOOLEAN"/>
+         <BDA name="Check" bType="Check"/>
+      </DAType>
+      <DAType id="Originator">
+         <BDA name="orCat" bType="Enum" type="orCategory" desc="Originator category indicates who/what caused the change of a controllable value. See OriginatorCategory."/>
+         <BDA name="orIdent" bType="Octet64" desc="Originator identification shall show the address of the originator who caused the change of the value. If NULL, originator of a particular action is not known or is not reported."/>
+      </DAType>
+      <DAType id="Oper_SPC_DPC">
+         <BDA name="ctlVal" bType="BOOLEAN"/>
+         <BDA name="operTm" bType="Timestamp"/>
+         <BDA name="origin" bType="Struct" type="Originator"/>
+         <BDA name="ctlNum" bType="INT8U"/>
+         <BDA name="T" bType="Timestamp"/>
+         <BDA name="Test" bType="BOOLEAN"/>
+         <BDA name="Check" bType="Check"/>
+         <ProtNs type="8-MMS">IEC 61850-8-1:2003</ProtNs>
+      </DAType>
+      <DAType id="Unit">
+         <BDA name="SIUnit" bType="Enum" type="SIUnit" desc="See SIUnits."/>
+         <BDA name="multiplier" bType="Enum" type="multiplier" desc="The default value is 0 (i.e. multiplier = 1). See Multiplier."/>
+      </DAType>
+      <DAType id="Vector">
+         <BDA name="mag" bType="Struct" type="AnalogueValue" desc="The magnitude of the complex value."/>
+         <BDA name="ang" bType="Struct" type="AnalogueValue" desc="The angle of the complex value in degrees. The angle reference is defined in the context where the Vector type is used. - 180 ... 180"/>
+      </DAType>
+      <DAType id="AnalogValueCtl" desc="Pour APC">
+         <BDA name="f" bType="FLOAT32" desc="The value of f shall be the FLOAT representation of the measured value. f shall represent the technological value in SI units."/>
+      </DAType>
+      <DAType id="Oper_APC">
+         <BDA name="ctlVal" bType="Struct" type="AnalogueValue"/>
+         <BDA name="operTm" bType="Timestamp"/>
+         <BDA name="origin" bType="Struct" type="Originator"/>
+         <BDA name="ctlNum" bType="INT8U"/>
+         <BDA name="T" bType="Timestamp"/>
+         <BDA name="Test" bType="BOOLEAN"/>
+         <BDA name="Check" bType="Check"/>
+         <ProtNs type="8-MMS">IEC 61850-8-1:2003</ProtNs>
+      </DAType>
+      <EnumType id="Beh">
+         <EnumVal ord="1">on</EnumVal>
+         <EnumVal ord="2">blocked</EnumVal>
+         <EnumVal ord="3">test</EnumVal>
+         <EnumVal ord="4">test/blocked</EnumVal>
+         <EnumVal ord="5">off</EnumVal>
+      </EnumType>
+      <EnumType id="Health">
+         <EnumVal ord="1">Ok</EnumVal>
+         <EnumVal ord="2">Warning</EnumVal>
+         <EnumVal ord="3">Alarm</EnumVal>
+      </EnumType>
+      <EnumType id="Mod">
+         <EnumVal ord="1">on</EnumVal>
+         <EnumVal ord="2">blocked</EnumVal>
+         <EnumVal ord="3">test</EnumVal>
+         <EnumVal ord="4">test/blocked</EnumVal>
+         <EnumVal ord="5">off</EnumVal>
+      </EnumType>
+      <EnumType id="CtlModels">
+         <EnumVal ord="0">status-only</EnumVal>
+         <EnumVal ord="1">direct-with-normal-security</EnumVal>
+         <EnumVal ord="2">sbo-with-normal-security</EnumVal>
+         <EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+         <EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+      </EnumType>
+      <EnumType id="OpModSyn">
+         <EnumVal ord="1">Automatic-synchronizing</EnumVal>
+         <EnumVal ord="2">Automatic-paralleling</EnumVal>
+         <EnumVal ord="3">Manual</EnumVal>
+         <EnumVal ord="4">Test</EnumVal>
+      </EnumType>
+      <EnumType id="SwTyp">
+         <EnumVal ord="1">Load Break</EnumVal>
+         <EnumVal ord="2">Disconnector</EnumVal>
+         <EnumVal ord="3">Earthing Switch</EnumVal>
+         <EnumVal ord="4">High Speed Earthing Switch</EnumVal>
+      </EnumType>
+      <EnumType id="EVACConnectionCharging">
+         <EnumVal ord="1">Single Phase</EnumVal>
+         <EnumVal ord="2">Three Phase</EnumVal>
+         <EnumVal ord="3">System A</EnumVal>
+         <EnumVal ord="4">System B</EnumVal>
+         <EnumVal ord="5">System C</EnumVal>
+         <EnumVal ord="98">Not Applicable / Unknown</EnumVal>
+      </EnumType>
+      <EnumType id="GroundingSystem">
+         <EnumVal ord="1">IT</EnumVal>
+         <EnumVal ord="2">TN-S</EnumVal>
+         <EnumVal ord="3">TN-C</EnumVal>
+         <EnumVal ord="4">TN-C-S</EnumVal>
+         <EnumVal ord="5">TT</EnumVal>
+      </EnumType>
+      <EnumType id="ScheduleState_kind">
+         <EnumVal ord="1">Not ready</EnumVal>
+         <EnumVal ord="2">Start Time required</EnumVal>
+         <EnumVal ord="3">Ready</EnumVal>
+         <EnumVal ord="4">Running</EnumVal>
+         <EnumVal ord="98">Not Applicable / unknown</EnumVal>
+      </EnumType>
+      <EnumType id="ScheduleInterval_kind">
+         <EnumVal ord="0">Unknown</EnumVal>
+         <EnumVal ord="1">Millisecond</EnumVal>
+         <EnumVal ord="2">Minute</EnumVal>
+         <EnumVal ord="3">Hour</EnumVal>
+         <EnumVal ord="4">Day</EnumVal>
+         <EnumVal ord="5">Week</EnumVal>
+         <EnumVal ord="6">Month</EnumVal>
+         <EnumVal ord="7">Year</EnumVal>
+         <EnumVal ord="98">Unknown</EnumVal>
+      </EnumType>
+      <EnumType id="ENS_EVState">
+         <EnumVal ord="1">Idle and Ready</EnumVal>
+         <EnumVal ord="2">ACCharging</EnumVal>
+         <EnumVal ord="3">DCCharging</EnumVal>
+         <EnumVal ord="4">ACDischarging</EnumVal>
+         <EnumVal ord="5">DCDischarging</EnumVal>
+         <EnumVal ord="12">ACCharging Pause</EnumVal>
+         <EnumVal ord="13">DCCharging Pause</EnumVal>
+         <EnumVal ord="14">ACDischarging Pause</EnumVal>
+         <EnumVal ord="15">DCDischarging Pause</EnumVal>
+         <EnumVal ord="98">Not Applicable / Unknown</EnumVal>
+      </EnumType>
+      <EnumType id="occType">
+         <EnumVal ord="0">Time</EnumVal>
+         <EnumVal ord="1">WeekDay</EnumVal>
+         <EnumVal ord="2">WeekOfYear</EnumVal>
+         <EnumVal ord="3">DayOfMonth</EnumVal>
+         <EnumVal ord="4">DayOfYear</EnumVal>
+      </EnumType>
+      <EnumType id="occPer">
+         <EnumVal ord="0">Hour</EnumVal>
+         <EnumVal ord="1">Day</EnumVal>
+         <EnumVal ord="2">Week</EnumVal>
+         <EnumVal ord="3">Month</EnumVal>
+         <EnumVal ord="4">Year</EnumVal>
+      </EnumType>
+      <EnumType id="weekDay">
+         <EnumVal ord="0">reserved</EnumVal>
+         <EnumVal ord="1">Monday</EnumVal>
+         <EnumVal ord="2">Tuesday</EnumVal>
+         <EnumVal ord="3">Wednesday</EnumVal>
+         <EnumVal ord="4">Thursday</EnumVal>
+         <EnumVal ord="5">Friday</EnumVal>
+         <EnumVal ord="6">Saturday</EnumVal>
+         <EnumVal ord="7">Sunday</EnumVal>
+      </EnumType>
+      <EnumType id="month">
+         <EnumVal ord="0">reserved</EnumVal>
+         <EnumVal ord="1">January</EnumVal>
+         <EnumVal ord="2">February</EnumVal>
+         <EnumVal ord="3">March</EnumVal>
+         <EnumVal ord="4">April</EnumVal>
+         <EnumVal ord="5">May</EnumVal>
+         <EnumVal ord="6">June</EnumVal>
+         <EnumVal ord="7">July</EnumVal>
+         <EnumVal ord="8">August</EnumVal>
+         <EnumVal ord="9">September</EnumVal>
+         <EnumVal ord="10">October</EnumVal>
+         <EnumVal ord="11">November</EnumVal>
+         <EnumVal ord="12">December</EnumVal>
+      </EnumType>
+      <EnumType id="orCategory">
+         <EnumVal ord="0">not-supported</EnumVal>
+         <EnumVal ord="1">bay-control</EnumVal>
+         <EnumVal ord="2">station-control</EnumVal>
+         <EnumVal ord="3">remote-control</EnumVal>
+         <EnumVal ord="4">automatic-bay</EnumVal>
+         <EnumVal ord="5">automatic-station</EnumVal>
+         <EnumVal ord="6">automatic-remote</EnumVal>
+         <EnumVal ord="7">maintenance</EnumVal>
+         <EnumVal ord="8">process</EnumVal>
+      </EnumType>
+      <EnumType id="SIUnit">
+         <EnumVal ord="1"/>
+         <EnumVal ord="2">m</EnumVal>
+         <EnumVal ord="3">kg</EnumVal>
+         <EnumVal ord="4">s</EnumVal>
+         <EnumVal ord="5">A</EnumVal>
+         <EnumVal ord="6">K</EnumVal>
+         <EnumVal ord="7">mol</EnumVal>
+         <EnumVal ord="8">cd</EnumVal>
+         <EnumVal ord="9">deg</EnumVal>
+         <EnumVal ord="10">rad</EnumVal>
+         <EnumVal ord="11">sr</EnumVal>
+         <EnumVal ord="21">Gy</EnumVal>
+         <EnumVal ord="22">q</EnumVal>
+         <EnumVal ord="23">°C</EnumVal>
+         <EnumVal ord="24">Sv</EnumVal>
+         <EnumVal ord="25">F</EnumVal>
+         <EnumVal ord="26">C</EnumVal>
+         <EnumVal ord="27">S</EnumVal>
+         <EnumVal ord="28">H</EnumVal>
+         <EnumVal ord="29">V</EnumVal>
+         <EnumVal ord="30">ohm</EnumVal>
+         <EnumVal ord="31">J</EnumVal>
+         <EnumVal ord="32">N</EnumVal>
+         <EnumVal ord="33">Hz</EnumVal>
+         <EnumVal ord="34">lx</EnumVal>
+         <EnumVal ord="35">Lm</EnumVal>
+         <EnumVal ord="36">Wb</EnumVal>
+         <EnumVal ord="37">T</EnumVal>
+         <EnumVal ord="38">W</EnumVal>
+         <EnumVal ord="39">Pa</EnumVal>
+         <EnumVal ord="41">m²</EnumVal>
+         <EnumVal ord="42">m³</EnumVal>
+         <EnumVal ord="43">m/s</EnumVal>
+         <EnumVal ord="44">m/s²</EnumVal>
+         <EnumVal ord="45">m³/s</EnumVal>
+         <EnumVal ord="46">m/m³</EnumVal>
+         <EnumVal ord="47">M</EnumVal>
+         <EnumVal ord="48">kg/m³</EnumVal>
+         <EnumVal ord="49">m²/s</EnumVal>
+         <EnumVal ord="50">W/m K</EnumVal>
+         <EnumVal ord="51">J/K</EnumVal>
+         <EnumVal ord="52">ppm</EnumVal>
+         <EnumVal ord="53">1/s</EnumVal>
+         <EnumVal ord="54">rad/s</EnumVal>
+         <EnumVal ord="55">W/m</EnumVal>
+         <EnumVal ord="56">J/m</EnumVal>
+         <EnumVal ord="57">S/m</EnumVal>
+         <EnumVal ord="58">K/s</EnumVal>
+         <EnumVal ord="59">Pa/s</EnumVal>
+         <EnumVal ord="60">J/kg K</EnumVal>
+         <EnumVal ord="61">VA</EnumVal>
+         <EnumVal ord="62">Watts</EnumVal>
+         <EnumVal ord="63">VAr</EnumVal>
+         <EnumVal ord="64">phi</EnumVal>
+         <EnumVal ord="65">cos(phi)</EnumVal>
+         <EnumVal ord="66">Vs</EnumVal>
+         <EnumVal ord="67">V²</EnumVal>
+         <EnumVal ord="68">As</EnumVal>
+         <EnumVal ord="69">A²</EnumVal>
+         <EnumVal ord="70">A²t</EnumVal>
+         <EnumVal ord="71">VAh</EnumVal>
+         <EnumVal ord="72">Wh</EnumVal>
+         <EnumVal ord="73">VArh</EnumVal>
+         <EnumVal ord="74">V/Hz</EnumVal>
+         <EnumVal ord="75">Hz/s</EnumVal>
+         <EnumVal ord="76">char</EnumVal>
+         <EnumVal ord="77">char/s</EnumVal>
+         <EnumVal ord="78">kgm²</EnumVal>
+         <EnumVal ord="79">dB</EnumVal>
+         <EnumVal ord="80">1/Wh</EnumVal>
+         <EnumVal ord="81">W/s</EnumVal>
+         <EnumVal ord="82">l/s</EnumVal>
+         <EnumVal ord="83">dBm</EnumVal>
+         <EnumVal ord="84">h</EnumVal>
+         <EnumVal ord="85">min</EnumVal>
+         <EnumVal ord="86">ohm/m</EnumVal>
+         <EnumVal ord="87">percent/s</EnumVal>
+      </EnumType>
+      <EnumType id="multiplier">
+         <EnumVal ord="-24">y</EnumVal>
+         <EnumVal ord="-21">z</EnumVal>
+         <EnumVal ord="-18">a</EnumVal>
+         <EnumVal ord="-15">f</EnumVal>
+         <EnumVal ord="-12">p</EnumVal>
+         <EnumVal ord="-9">n</EnumVal>
+         <EnumVal ord="-6">µ</EnumVal>
+         <EnumVal ord="-3">m</EnumVal>
+         <EnumVal ord="-2">c</EnumVal>
+         <EnumVal ord="-1">d</EnumVal>
+         <EnumVal ord="0"/>
+         <EnumVal ord="1">da</EnumVal>
+         <EnumVal ord="2">h</EnumVal>
+         <EnumVal ord="3">k</EnumVal>
+         <EnumVal ord="6">M</EnumVal>
+         <EnumVal ord="9">G</EnumVal>
+         <EnumVal ord="12">T</EnumVal>
+         <EnumVal ord="15">P</EnumVal>
+         <EnumVal ord="18">E</EnumVal>
+         <EnumVal ord="21">Z</EnumVal>
+         <EnumVal ord="24">Y</EnumVal>
+      </EnumType>
+   </DataTypeTemplates>
+</SCL>
