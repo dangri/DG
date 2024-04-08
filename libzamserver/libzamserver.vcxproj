@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{4180A4EC-FE55-40DB-827A-8CA9351B84FA}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.raspberry_pi</ToolchainID>
+    <ToolchainVersion>8.3.0/8.2.1/r3</ToolchainVersion>
+    <GNUTargetType>DynamicLibrary</GNUTargetType>
+    <RemoteBuildHost>
+    </RemoteBuildHost>
+    <ExplicitSysroot>E:\SysGCC\buster\arm-linux-gnueabihf\sysroot</ExplicitSysroot>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.raspberry_pi</ToolchainID>
+    <ToolchainVersion>8.3.0/8.2.1/r1</ToolchainVersion>
+    <GNUTargetType>DynamicLibrary</GNUTargetType>
+    <IncludePath>E:\boost_1_72_0\boost;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\boost_1_72_0\lib64-msvc-10.0;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.raspberry_pi</ToolchainID>
+    <ToolchainVersion>8.3.0/8.2.1/r3</ToolchainVersion>
+    <GNUTargetType>DynamicLibrary</GNUTargetType>
+    <RemoteBuildHost>
+    </RemoteBuildHost>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ToolchainID>com.visualgdb.raspberry_pi</ToolchainID>
+    <ToolchainVersion>6.3.0/7.12/r5</ToolchainVersion>
+    <GNUTargetType>DynamicLibrary</GNUTargetType>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <CPPLanguageStandard>GNUPP2A</CPPLanguageStandard>
+      <AdditionalIncludeDirectories>=/usr/include;=/usr/local/include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard>GNU2x</CLanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <LinkerScript />
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <CPPLanguageStandard>CPP11</CPPLanguageStandard>
+      <AdditionalIncludeDirectories>=/usr/include; =/usr/local/include;=/usr/local/include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <CLanguageStandard>
+      </CLanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <LinkerScript>
+      </LinkerScript>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <CPPLanguageStandard>GNUPP2A</CPPLanguageStandard>
+      <AdditionalIncludeDirectories>=/usr/include ;=/usr/local/include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG=1;RELEASE=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard>GNU2x</CLanguageStandard>
+    </ClCompile>
+    <Link>
+      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LinkerScript />
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <CPPLanguageStandard>CPP11</CPPLanguageStandard>
+      <AdditionalIncludeDirectories>../../../../../SysGCC/Buster/arm-linux-gnueabihf/sysroot/usr/local/include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG=1;RELEASE=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <CLanguageStandard>
+      </CLanguageStandard>
+    </ClCompile>
+    <Link>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LinkerScript>
+      </LinkerScript>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ZamDA.cpp" />
+    <ClCompile Include="ZamDO.cpp" />
+    <ClCompile Include="ZamDS.cpp" />
+    <ClCompile Include="ZamFCDA.cpp" />
+    <ClCompile Include="ZamGSE.cpp" />
+    <ClCompile Include="ZamIed.cpp" />
+    <ClCompile Include="ZamLD.cpp" />
+    <ClCompile Include="ZamLN.cpp" />
+    <ClCompile Include="ZamLN0.cpp" />
+    <ClCompile Include="ZamModel.cpp" />
+    <ClCompile Include="ZamRC.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ZamBDA.hpp" />
+    <ClInclude Include="ZamDA.hpp" />
+    <ClInclude Include="ZamDAType.hpp" />
+    <ClInclude Include="ZamDO.hpp" />
+    <ClInclude Include="ZamDOType.hpp" />
+    <ClInclude Include="ZamDS.hpp" />
+    <ClInclude Include="ZamEnumType.hpp" />
+    <ClInclude Include="ZamEnumVal.hpp" />
+    <ClInclude Include="ZamFCDA.hpp" />
+    <ClInclude Include="ZamGSE.h" />
+    <ClInclude Include="ZamIed.hpp" />
+    <ClInclude Include="ZamLD.hpp" />
+    <ClInclude Include="ZamLN.hpp" />
+    <ClInclude Include="ZamLN0.hpp" />
+    <ClInclude Include="ZamLNType.hpp" />
+    <ClInclude Include="ZamModel.hpp" />
+    <ClInclude Include="ZamRC.hpp" />
+    <ClInclude Include="ZamSDOType.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libzamserver-Debug.vgdbsettings" />
+    <None Include="libzamserver-Release.vgdbsettings" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
