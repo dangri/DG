@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{b0ad832c-e6b5-46d9-9418-f09f263e459e}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{dff31078-2fd6-45ff-9102-3afeef8c7017}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{31e30ef7-f94d-4afa-aff9-1b8fa87e93e3}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{4d019b67-b90b-48a9-b68b-b8ca8532b6d1}</UniqueIdentifier>
+      <Extensions>vgdbsettings</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Testicd.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamDA.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamDO.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamDS.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamFCDA.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamIed.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamLD.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamLN.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamLN0.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamRC.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Testicd-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="Testicd-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="IEDCSD.icd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="test.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamBDA.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDA.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDAType.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDO.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDOType.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamDS.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamEnumType.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamEnumVal.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamFCDA.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamIed.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamLD.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamLN.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamLN0.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamLNType.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamRC.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamSDOType.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

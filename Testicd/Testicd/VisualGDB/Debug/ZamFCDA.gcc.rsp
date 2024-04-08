@@ -1,0 +1,1 @@
+--sysroot=E:/SysGCC/bookworm/arm-linux-gnueabihf/sysroot/ -I=/usr/include -I=/usr/local/include -ggdb -O0 -DDEBUG=1 -DDEBUG=1 -ffunction-sections -fdata-sections -std=c++2a   -c "ZamFCDA.cpp" -o "VisualGDB/Debug/ZamFCDA.o" -MD -MP -MF "VisualGDB/Debug/ZamFCDA.dep"
