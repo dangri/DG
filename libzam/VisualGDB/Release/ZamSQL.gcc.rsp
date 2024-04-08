@@ -1,0 +1,1 @@
+--sysroot=E:/SysGCC/Buster/arm-linux-gnueabihf/sysroot -I=/usr/include -I=/usr/local/include -ggdb -O3 -DNDEBUG=1 -DRELEASE=1 -DNDEBUG=1 -DRELEASE=1 -ffunction-sections -fdata-sections -fPIC -std=gnu++2a   -c "ZamSQL.cpp" -o "VisualGDB/Release/ZamSQL.o" -MD -MP -MF "VisualGDB/Release/ZamSQL.dep"

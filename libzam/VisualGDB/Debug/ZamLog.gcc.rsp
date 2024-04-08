@@ -1,0 +1,1 @@
+--sysroot=E:/SysGCC/buster/arm-linux-gnueabihf/sysroot -I=/usr/include -I=/usr/local/include -ggdb -O0 -DDEBUG=1 -DDEBUG=1 -ffunction-sections -fdata-sections -fPIC -std=gnu++2a -DBOOST_ALL_DYN_LINK   -c "ZamLog.cpp" -o "VisualGDB/Debug/ZamLog.o" -MD -MP -MF "VisualGDB/Debug/ZamLog.dep"

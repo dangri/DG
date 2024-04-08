@@ -1,0 +1,1 @@
+-I=/usr/include -I=/usr/local/include -ggdb -O3 -DNDEBUG=1 -DRELEASE=1 -DNDEBUG=1 -DRELEASE=1 -ffunction-sections -fdata-sections -fPIC -std=gnu++2a   -c "ZamClient.cpp" -o "VisualGDB/Release/ZamClient.o" -MD -MP -MF "VisualGDB/Release/ZamClient.dep"

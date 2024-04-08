@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{dc71407d-3a83-48b8-b218-085ab33f694d}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{8a0666ac-129b-41c2-a4f8-c84d1e89fa86}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{523fbfbe-e9ef-4397-91ba-ca9d6e401ca5}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{4655cea4-7072-478a-b41b-7f2780507404}</UniqueIdentifier>
+      <Extensions>vgdbsettings</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ZamCod.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamVar.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamMemp.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamVarp.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZamLog.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ZamCod.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamSQL.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamVar.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamMemp.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamVarp.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZamLog.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libzam-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="libzam-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+</Project>
