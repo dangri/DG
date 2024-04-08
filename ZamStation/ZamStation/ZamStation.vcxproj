@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{806C6548-286A-4F8E-B2CA-9BDEBBFD3550}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.raspberry_pi</ToolchainID>
+    <ToolchainVersion>12.2.0/13.1/r1</ToolchainVersion>
+    <ExplicitSysroot>E:\SysGCC\Buster\arm-linux-gnueabihf\sysroot</ExplicitSysroot>
+    <GenerateBuildScript>false</GenerateBuildScript>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.raspberry_pi</ToolchainID>
+    <ToolchainVersion>12.2.0/13.1/r1</ToolchainVersion>
+    <ExplicitSysroot>E:\SysGCC\Buster\arm-linux-gnueabihf\sysroot</ExplicitSysroot>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>=/usr/local/include;=/usr/include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CLanguageStandard>GNU2x</CLanguageStandard>
+      <CPPLanguageStandard>GNUPP2A</CPPLanguageStandard>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>pthread; boost_system; boost_date_time; fmt; pugixml; sqlite3; rt; iec61850; zam; zamserver; zamclient; stdc++fs;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <LinkerScript />
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>=/usr/include;=/usr/local/include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG=1;RELEASE=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CLanguageStandard>GNU2x</CLanguageStandard>
+      <CPPLanguageStandard>GNUPP2A</CPPLanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>-lstdc++fs;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>pthread; boost_system; boost_thread; boost_log; boost_date_time; pugixml; sqlite3; rt; fmt; iec61850; zam; zamserver; zamclient;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <LinkerScript />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ZamCalcul.cpp" />
+    <ClCompile Include="ZamDCTE.cpp" />
+    <ClCompile Include="ZamDINV.cpp" />
+    <ClCompile Include="ZamDPMC.cpp" />
+    <ClCompile Include="ZamDRTF.cpp" />
+    <ClCompile Include="ZamDVWC.cpp" />
+    <ClCompile Include="ZamDWMX.cpp" />
+    <ClCompile Include="Zamevse.cpp" />
+    <ClCompile Include="ZamReportCC.cpp" />
+    <ClCompile Include="ZamConVE.cpp" />
+    <ClCompile Include="ZamAddress.cpp" />
+    <ClCompile Include="ZamBay.cpp" />
+    <ClCompile Include="ZamConAP.cpp" />
+    <ClCompile Include="ZamCondeq.cpp" />
+    <ClCompile Include="ZamCondnode.cpp" />
+    <ClCompile Include="ZamDECP.cpp" />
+    <ClCompile Include="ZamDEEVP.cpp" />
+    <ClCompile Include="ZamDSTO.cpp" />
+    <ClCompile Include="ZamEqf.cpp" />
+    <ClCompile Include="ZamEquip.cpp" />
+    <ClCompile Include="ZamFSCHP.cpp" />
+    <ClCompile Include="ZamFunc.cpp" />
+    <ClCompile Include="ZamLDCS.cpp" />
+    <ClCompile Include="ZamLDSE.cpp" />
+    <ClCompile Include="ZamLLN0.cpp" />
+    <ClCompile Include="ZamLNode.cpp" />
+    <ClCompile Include="ZamLPHD.cpp" />
+    <ClCompile Include="ZamMMXU.cpp" />
+    <ClCompile Include="ZamProcess.cpp" />
+    <ClCompile Include="ZamReport.cpp" />
+    <ClCompile Include="ZamS118.cpp" />
+    <ClCompile Include="ZamServeur.cpp" />
+    <ClCompile Include="ZamSignal.cpp" />
+    <ClCompile Include="ZamStation.cpp" />
+    <ClCompile Include="ZamStemps.cpp" />
+    <ClCompile Include="ZamSubnet.cpp" />
+    <ClCompile Include="ZamSubstation.cpp" />
+    <ClCompile Include="ZamTerm.cpp" />
+    <ClCompile Include="ZamTypad.cpp" />
+    <ClCompile Include="ZamUnit.cpp" />
+    <ClCompile Include="ZamVL.cpp" />
+    <ClCompile Include="ZamXSWI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DER.scd" />
+    <None Include="IEDCSD.icd" />
+    <None Include="ZamStation-Debug.vgdbsettings" />
+    <None Include="ZamStation-Release.vgdbsettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ZamCalcul.h" />
+    <ClInclude Include="ZamDCTE.h" />
+    <ClInclude Include="ZamDINV.h" />
+    <ClInclude Include="ZamDPMC.h" />
+    <ClInclude Include="ZamDRTF.h" />
+    <ClInclude Include="ZamDVWC.h" />
+    <ClInclude Include="ZamDWMX.h" />
+    <ClInclude Include="Zamevse.h" />
+    <ClInclude Include="ZamReportCC.hpp" />
+    <ClInclude Include="ZamConVE.h" />
+    <ClInclude Include="ParamCmd.h" />
+    <ClInclude Include="ZamAddress.h" />
+    <ClInclude Include="ZamBay.h" />
+    <ClInclude Include="ZamConAP.h" />
+    <ClInclude Include="ZamCondeq.h" />
+    <ClInclude Include="ZamCondnode.h" />
+    <ClInclude Include="ZamDECP.h" />
+    <ClInclude Include="ZamDEEVP.hpp" />
+    <ClInclude Include="ZamDSTO.h" />
+    <ClInclude Include="ZamEqf.h" />
+    <ClInclude Include="ZamEquip.hpp" />
+    <ClInclude Include="ZamFSCHP.hpp" />
+    <ClInclude Include="ZamFunc.h" />
+    <ClInclude Include="ZamLDCS.hpp" />
+    <ClInclude Include="ZamLDSE.hpp" />
+    <ClInclude Include="ZamLLN0.hpp" />
+    <ClInclude Include="ZamLNode.h" />
+    <ClInclude Include="ZamLPHD.hpp" />
+    <ClInclude Include="ZamMMXU.hpp" />
+    <ClInclude Include="ZamProcess.hpp" />
+    <ClInclude Include="ZamReport.hpp" />
+    <ClInclude Include="ZamS118.hpp" />
+    <ClInclude Include="ZamServeur.hpp" />
+    <ClInclude Include="ZamSignal.hpp" />
+    <ClInclude Include="ZamStemps.hpp" />
+    <ClInclude Include="ZamSubnet.h" />
+    <ClInclude Include="ZamSubstation.h" />
+    <ClInclude Include="ZamTerm.h" />
+    <ClInclude Include="ZamTypad.h" />
+    <ClInclude Include="ZamUnit.hpp" />
+    <ClInclude Include="ZamVL.h" />
+    <ClInclude Include="ZamXSWI.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<reseau desc="Basse Tension urbain">
+	<source desc="Transfo 630kVA"  tension="240">
+		<puissance nominale="630" ucc="0.04"/>
+		<pertes constantes="1.3" variables="6.5" /> 
+	</source>
+	<ext desc="autres" kVA="300" tg="-0.1"/>
+	<amont desc="industriel" kVA ="60" tg="-0.4">
+		<conducteur desc="cable 240 Alu" longueur="0.5" impedance_re="0.125" impedance_im="0.76"/>
+	</amont>
+	<aval desc="residentiel" kVA="60" tg="-0.2">
+		<conducteur desc ="cable 150 Alu" longueur="0.2" impedance_re="0.206" impedance_im="0.76"/>
+	</aval>
+</reseau>
