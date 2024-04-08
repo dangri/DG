@@ -52,6 +52,9 @@
     <ClCompile Include="ZamRC.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
+    <ClCompile Include="essai.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Testicd-Debug.vgdbsettings">
