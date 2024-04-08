@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{c0992159-0340-4268-87dd-cca8d34cc2ac}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>ZamihmEV.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>
+    </WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>
+    </InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <CommandLineArguments>mode=autonome  bddrep=C:\Users\andell3\Documents\Maquette_Vedecom\tests</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="cable.py" />
+    <Compile Include="ComplementsIHM.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="echuart.py" />
+    <Compile Include="iec61850.py" />
+    <Compile Include="mempart.py" />
+    <Compile Include="nouvelleihm.py" />
+    <Compile Include="simulEV.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mybase.py" />
+    <Compile Include="Mytable.py" />
+    <Compile Include="utilitaires.py" />
+    <Compile Include="actions.py" />
+    <Compile Include="constantes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="valeurinits.py" />
+    <Compile Include="ZamihmEV - Copy.py" />
+    <Compile Include="ZamPasserelleEV.py" />
+    <Compile Include="ZamihmEV.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

@@ -1,0 +1,3 @@
+#! /bin/sh
+ps -A | mawk '/python/  {print "echo  kill" $1 "\n";print "kill " $1}' | sh 
+
