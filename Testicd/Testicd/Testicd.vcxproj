@@ -46,9 +46,8 @@
     <Link>
       <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
       <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
-      <AdditionalLibraryNames>pthread; boost_system; boost_thread; boost_log; boost_date_time; pugixml; zam; sqlite3; stdc++fs;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLibraryNames>pthread; pugixml; zam; sqlite3; stdc++fs;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
       <LinkerScript />
-      <AdditionalOptions>--as-needed %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
@@ -66,7 +65,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="essai.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="Testicd.cpp" />
     <ClCompile Include="ZamDA.cpp" />

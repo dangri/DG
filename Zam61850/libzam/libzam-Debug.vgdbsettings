@@ -36,9 +36,9 @@
     <ToolchainID>
       <ID>com.visualgdb.raspberry_pi</ID>
       <Version>
-        <GCC>8.3.0</GCC>
-        <GDB>8.2.1</GDB>
-        <Revision>3</Revision>
+        <GCC>12.2.0</GCC>
+        <GDB>13.1</GDB>
+        <Revision>1</Revision>
       </Version>
     </ToolchainID>
     <ProjectFile>libzam.vcxproj</ProjectFile>
@@ -134,6 +134,7 @@
       <MaxBreakpointLimit>0</MaxBreakpointLimit>
       <EnableVerboseMode>true</EnableVerboseMode>
       <EnablePrettyPrinters>false</EnablePrettyPrinters>
+      <EnableAbsolutePathReporting>true</EnableAbsolutePathReporting>
     </AdditionalGDBSettings>
     <LaunchGDBSettings xsi:type="GDBLaunchParametersNewInstance">
       <DebuggedProgram>$(TargetPath)</DebuggedProgram>

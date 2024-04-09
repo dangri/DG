@@ -40,7 +40,7 @@
     <ToolchainID>com.visualgdb.raspberry_pi</ToolchainID>
     <ToolchainVersion>8.3.0/8.2.1/r3</ToolchainVersion>
     <GNUTargetType>DynamicLibrary</GNUTargetType>
-    <ExplicitSysroot>E:\SysGCC\buster\arm-linux-gnueabihf\sysroot</ExplicitSysroot>
+    <ExplicitSysroot>E:\SysGCC\bookworm\arm-linux-gnueabihf\sysroot</ExplicitSysroot>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <GNUConfigurationType>Debug</GNUConfigurationType>

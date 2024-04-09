@@ -42,7 +42,7 @@
     <GNUTargetType>DynamicLibrary</GNUTargetType>
     <RemoteBuildHost>
     </RemoteBuildHost>
-    <ExplicitSysroot>E:\SysGCC\buster\arm-linux-gnueabihf\sysroot</ExplicitSysroot>
+    <ExplicitSysroot>E:\SysGCC\bookworm\arm-linux-gnueabihf\sysroot</ExplicitSysroot>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <GNUConfigurationType>Debug</GNUConfigurationType>

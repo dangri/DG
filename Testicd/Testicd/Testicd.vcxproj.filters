@@ -22,9 +22,6 @@
     <ClCompile Include="Testicd.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="test.cpp">
-      <Filter>Source files</Filter>
-    </ClCompile>
     <ClCompile Include="ZamDA.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
@@ -52,7 +49,7 @@
     <ClCompile Include="ZamRC.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="essai.cpp">
+    <ClCompile Include="test.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -9,6 +9,7 @@
       <Syscalls />
       <CXXCatchpoints />
     </CatchpointConfiguration>
+    <VisualWatchPreferences />
     <MaskInterruptsWhileStepping>false</MaskInterruptsWhileStepping>
     <MemoryWindowPreferences />
   </DebugPreferences>
