@@ -1,3 +1,5 @@
+e:\sources\repos\dangri\dg\testicd\visualgdb\debug\testicd.link.rsp
+e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\test.o
 e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\testicd.o
 e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\zamda.o
 e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\zamdo.o
@@ -8,6 +10,7 @@ e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\zamld.o
 e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\zamln.o
 e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\zamln0.o
 e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\zamrc.o
+e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\test.dep
 e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\testicd.dep
 e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\zamda.dep
 e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\zamdo.dep
@@ -18,7 +21,6 @@ e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\zamld.dep
 e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\zamln.dep
 e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\zamln0.dep
 e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\zamrc.dep
-e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\essai.gcc.rsp
 e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\test.gcc.rsp
 e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\testicd.gcc.rsp
 e:\sources\repos\dangri\dg\testicd\testicd\visualgdb\debug\zamda.gcc.rsp

@@ -1,1 +1,1 @@
-﻿C:\Program Files (x86)\Sysprogs\VisualGDB\MSBuild\Targets\gcc.targets(321,5): error MSB4181: la tâche "GCCCompile" a retourné false mais n'a pas journalisé d'erreur.
+﻿C:\Program Files (x86)\Sysprogs\VisualGDB\MSBuild\Targets\link.targets(123,2): error MSB4181: la tâche "GCCLink" a retourné false mais n'a pas journalisé d'erreur.
